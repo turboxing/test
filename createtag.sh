@@ -54,7 +54,8 @@ do
         echo "包涵"
         a='a'
         d='d'
-        sed '1a drink tea' Podfile
+ 	sed -i "_bak" '1a\
+         drink tea' Podfile
         sed "$(LINE)d" Podfile
     exit
     else
