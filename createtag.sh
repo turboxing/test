@@ -4,6 +4,8 @@
 # 3. 打tag
 # 4. push tag 到远端
 #  遍历文件内容，找到s.verison 开始的行，用新的内容替换；exit 是关闭程序
+# todo： 需要判断是否替换成功，如果执行失败，需要还原podfile文件
+
 
 function updatePodSpecVersion(){
     temTagName=$1
